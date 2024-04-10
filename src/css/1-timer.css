@@ -82,3 +82,8 @@ button:hover {
   font-weight: 400;
   line-height: 1.5;
 }
+
+.disabled {
+  pointer-events: none; 
+  opacity: 0.5; 
+}

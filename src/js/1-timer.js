@@ -27,6 +27,7 @@ const options = {
   onClose(selectedDates) {
     if (selectedDates[0] <= Date.now()) {
       startBtn.disabled = true;
+      startBtn.classList.add('disabled');
       iziToast.error({
         backgroundColor: 'tomato',
         message: 'Please choose a date in the future',
@@ -38,6 +39,7 @@ const options = {
       });
     } else {
       startBtn.disabled = false;
+      startBtn.classList.remove('disabled');
       userSelectedDate = selectedDates[0];
     }
   },
